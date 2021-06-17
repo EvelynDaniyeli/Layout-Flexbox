@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout grid</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .hola{
+            display: flex;
+            flex-direction: row;
+            height: 250vh;
+        }
+        .arriba{
+            display: flex;
+            width: 100vw;
+            height: 10vh;
+            text-align: center;
+            background-color: white;
+            position:fixed;
+        }
+        .lateral{
+            width: 15vw;
+            height: 250vh;
+            background-color:lightgreen;
+        }
+        .ll{
+            display:grid;
+            flex-direction: column;
+            width: 85vw;
+            height: 250vh;
+            grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw; 
+            grid-template-rows: 10vh 5vh 10vh 10vh 10vh 3vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
+            background-color:cornflowerblue;
+        }
+        .cuadro1{
+            display: grid;
+            grid-column: 3 /span 5;
+            grid-row: 1 /span 4;
+            gap:0;
+            background-color: lightpink;
+            margin-top: 3vh;
+            margin-bottom: 1.5vh;
+        }
+        .mn{
+            grid-column: 3 /span 2;
+            grid-row: 5 /span 5;
+            gap:0;
+            background-color:gold;
+            margin-top: 3vh;
+            margin-bottom: 1.5vh;
+        }
+        .mn2{
+            grid-column: 6 /span 2;
+            grid-row: 5 /span 5;
+            gap:0;
+            background-color:gold;
+            margin-top: 3vh;
+            margin-bottom: 1.5vh;
+        }
+        .ki{
+            grid-column: 3 /span 1;
+            grid-row: 10 /span 2;
+            gap:0;
+            background-color:lawngreen;
+            margin-top: 3vh;
+            margin-bottom: 1.5vh;
+        }
+        .ki2{
+            grid-column: 5 /span 1;
+            grid-row: 10 /span 2;
+            gap:0;
+            background-color:lawngreen;
+            margin-top: 3vh;
+            margin-bottom: 1.5vh;
+        }
+        .ki3{
+            grid-column:  7/span 1;
+            grid-row: 10 /span 2;
+            gap:0;
+            background-color:lawngreen;
+            margin-top: 3vh;
+            margin-bottom: 1.5vh;
+        }
+        .cuadrote{
+            grid-column:  3/span 5;
+            grid-row: 12 /span 6;
+            gap:0;
+            background-color:mediumpurple;
+            margin-top: 3vh;
+            margin-bottom: 1.5vh;
+        }
+        .jj{
+            grid-column: 3 /span 2;
+            grid-row: 18 /span 5;
+            gap:0;
+            background-color:gold;
+            margin-top: 3vh;
+            margin-bottom: 1.5vh;
+        }
+        .jj2{
+            grid-column: 6 /span 2;
+            grid-row: 18 /span 5;
+            gap:0;
+            background-color:gold;
+            margin-top: 3vh;
+            margin-bottom: 1.5vh;
+        }
+        .hg{
+            display: grid;
+            grid-column: 3 /span 5;
+            grid-row: 23 /span 1;
+            gap:0;
+            background-color: lightpink;
+            margin-top: 3vh;
+        }
+        .hg2{
+            display: grid;
+            grid-column: 3 /span 5;
+            grid-row: 24 /span 1;
+            gap:0;
+            background-color:mediumseagreen;
+            margin-bottom: 1.5vh;
+        }
+        .pp{
+            display: grid;
+            grid-column: 9 /1;
+            grid-row: 26 /span 1;
+            gap:0;
+            background-color:white;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="hola">
+        <header class="arriba">
+            <h1>Architect</h1>
+        </header>
+        <aside class="lateral">
+
+        </aside>
+            <section class="ll">
+                <div class="cuadro1"></div>
+                <div class="mn"></div>
+                <div class="mn2"></div>
+                <div class="ki"></div>
+                <div class="ki2"></div>
+                <div class="ki3"></div>
+                <div class="cuadrote"></div>
+                <div class="jj"></div>
+                <div class="jj2"></div>
+                <div class="hg"></div>
+                <div class="hg2"></div>
+                <footer class="pp">
+                    <p>footer menu</p>
+                    <p>grid menu</p>
+                </footer>
+            </section>
+            
+       
+    </div>
+    
+
+</body>
+</html>

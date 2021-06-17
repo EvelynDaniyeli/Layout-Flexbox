@@ -4,81 +4,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Layout Flexbox</title>
     <style>
         *
         {
             padding: 0;
             margin: 0;
+            box-sizing: border-box;
         }
         .hola{
-            overflow: scroll;
             display: flex;
-            width: 100vw;
-            height: 100vh;
-            flex-wrap: wrap;
+            flex-direction: row;
+            height: 250vh;
         }
-        .jj{
+        .arriba{
+            display: flex;
             width: 100vw;
             height: 10vh;
             text-align: center;
             background-color: white;
-
+            position:fixed;
         }
-        .pp{
-            width: 100vw;
-            height: 10vh;
-            text-align: right;
-            align-self: flex-end;
-            background-color: white;
-        }
-        .hola2{
-            overflow: scroll;
-            overflow: hidden;
-            display: flex;
-            width: 100vw;
-            height: 80vh;
-            flex-direction: column;
-            flex-wrap: wrap;
-            
-        }
-        .kk{
+        .lateral{
             width: 15vw;
-            height: 100vh;
-            background-color: violet;
+            height: 250vh;
+            background-color: coral;
         }
         .ll{
             display: flex;
             flex-direction: column;
             width: 85vw;
-            height: 100vh;
-            background-color: yellowgreen;
+            height: 250vh;
+            background-color:cornflowerblue;
+
         }
-        .ññ{
+        .pp{
+            width: 85vw;
+            height: 8vh;
+            text-align: right;
+            background-color: white;
+        }
+        .cuadro1{
+            background-color: crimson;
+            flex-direction: column;
+            align-self: center;
+            width: 60vw;
+            height: 30vh;
+            margin-top: 3em;
+        }
+        .cuadros2{
+            display: flex;
+            align-self: center;
+            width: 60vw;
+            height: 40vh;
+            margin-bottom: 1.5em;
+            margin-top: 3em;
+        }
+        .mn{
+            background-color:lightcoral;
+            align-self: center;
             width: 20vw;
-            background-color: tomato;
+            height: 40vh;
+        }
+        .cuadros4{
+            display: flex;
+            align-self: center;
+            justify-content: space-between;
+            width: 60vw;
+            height: 40vh;
+            margin-bottom: 2vh;
+        }
+        .ki{
+            align-self: center;
+            background-color:indigo;
+            width: 10vw;
+            height: 20vh;
+        }
+        .cuadrote{
+            align-self: center;
+            background-color: crimson;
+            width: 60vw;
+            height: 60vh;
+            margin-bottom: 1.5vh;
+        }
+        .hg{
+            align-self: center;
+            background-color:indigo;
+            width: 60vw;
+            height: 10vh;
         }
        
     </style>
 </head>
 <body>
     <div class="hola">
-        <header class="jj">
+        <header class="arriba">
             <h1>Architect</h1>
         </header>
-        <div class="hola2">
-            <aside class="kk">
+        <aside class="lateral">
 
-            </aside>
+        </aside>
             <section class="ll">
-                <div class="ññ"></div>
+                <div class="cuadro1"></div>
+                <div class="cuadros2" style="justify-content: space-between;">
+                    <div class="mn"></div>
+                    <div class="mn"></div>
+                </div>
+
+                <div class="cuadros4">
+                    <div class="ki"></div>
+                    <div class="ki"></div>
+                    <div class="ki"></div>
+                    <div class="ki"></div>
+                </div>
+                <div class="cuadrote"></div>
+                <div class="cuadros2" style="justify-content: space-between;">
+                    <div class="mn"></div>
+                    <div class="mn"></div>
+                </div>
+
+                <div class="cuadros2" style="flex-direction: column;">
+                    <div class="hg"></div>
+                    <div class="hg" style="background-color: lightgreen;"></div>
+                </div>
+
+                <footer class="pp">
+                    <p>footer menu</p>
+                    <p>grid menu</p>
+                </footer>
             </section>
-        </div>
+            
        
-        <footer class="pp">
-            <p>footer menu</p>
-            <p>grid menu</p>
-        </footer>
     </div>
     
 

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        .contenedor{
+            display: grid;
+            grid-template-areas: 
+            "head head head"
+            "nav content content"
+            "nav footer footer";
+            grid-template-columns: 10% 1fr 1fr;
+            grid-template-rows: 10% 1fr 10%;
+            width: 100vw;
+            height: 100vh;
+            background-color: steelblue;
+        }
+        .item{
+            grid-area:head;
+            background-color:lightgrey;
+
+        }
+        .item2{
+            grid-area:nav;
+            background-color: lightgreen;
+        }
+        .main{
+            grid-area: content;
+            background-color: mediumorchid;
+            overflow-y: scroll;
+            padding: 2em;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: lightgrey;
+        }
+        .estadistica{
+            display: grid;
+            width: 100%;
+            height: 250px;
+            grid-template: 1fr 1fr/20% 1fr;
+            grid-template-areas: 
+            "it1 it3"
+            "it2 it3";
+            background-color: sienna;
+
+        }
+        .estadistica_item1{
+            grid-area: it1;
+            background-color:purple;
+        }
+        .estadistica_item2{
+            grid-area: it2;
+            background-color:royalblue;
+        }
+        .estadistica_item3{
+            grid-area: it3;
+            background-color:seagreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor"> 
+        <div class="item"></div>
+        <div class="item2"></div>
+        <div class="main">
+            <div class="estadistica">
+                <div class="estadistica_item1"></div>
+                <div class="estadistica_item2"></div>
+                <div class="estadistica_item3"></div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    
+</body>
+</html>
